@@ -1,0 +1,116 @@
+.barra-superior {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-top: 0;
+  background-color: rgba(253, 220, 71, 0.959);
+  height: 8rem;
+}
+@media (max-width: 768px) {
+  .barra-superior {
+    height: auto; 
+    min-height: auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .barra-superior {
+    height: auto; 
+    min-height: auto;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+}
+
+.titulo-section {
+  text-align: center;
+  color: rgb(12, 12, 12);
+  text-shadow: 5px 5px 5px rgb(5, 5, 8);
+  margin-top: 0.5rem;
+  font-size: 4rem;
+  margin-left: rem;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto; 
+  width: 90%; 
+  max-width: 600px; 
+  background-color: rgba(253, 220, 71, 0.959);
+  padding: 1rem;
+}
+
+.task-form textarea,
+.task-form input,
+.task-form select,
+.task-form button {
+  margin-bottom: 0.5rem; 
+  padding: 0.75rem; 
+  font-size: 1rem;
+}
+
+.task-form textarea {
+  height: 4rem; 
+}
+
+.task-form button {
+  background-color: #f3b91b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background-color: #f58319;
+}
+
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 50rem;
+  margin: 1; 
+  padding: 1rem; 
+  background-color: rgba(240, 220, 71, 0.959);
+  justify-content: space-around; 
+}
+@media (max-width: 768px) {
+  .cards-container {
+    height: auto; 
+    min-height: auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .cards-container {
+    height: auto; 
+    min-height: auto;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  width: 12rem;
+  height: 14rem;
+  margin-top: 2rem;
+  padding: 2.5rem;
+  background-image: url('../assets/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
